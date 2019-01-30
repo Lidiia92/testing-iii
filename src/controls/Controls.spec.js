@@ -41,7 +41,7 @@ describe('<Controls /> tests', () => {
 
     
     it('buttons text changes to reflect the state the door will be in if clicked', () => {
-        const { getByTestId } = render(<Controls locked={true} />);
+        const { getByTestId } = render(<Controls closed={false} />);
 
         const closed = getByTestId('closed');
 
